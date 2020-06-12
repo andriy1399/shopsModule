@@ -15,19 +15,19 @@
             <div class="col stock">
                 <form action="" class="stock__container">
                     <div class="block">
-                        <label>Баланс</label>
+                        <label>Баланс:</label>
                         <input type="text" class="stock__article" disabled name="bank">
                     </div>
                     <div class="block">
-                        <label>Пиво</label>
+                        <label>Пиво:</label>
                         <input type="text" class="stock__article" disabled name="beer">
                     </div>
                     <div class="block">
-                        <label>Вино</label>
+                        <label>Вино:</label>
                         <input type="text" class="stock__article" disabled name="vine">
                     </div>
                     <div class="block">
-                        <label>Пепсі</label>
+                        <label>Пепсі:</label>
                         <input type="text" class="stock__article" disabled name="pepsi">
                     </div>
                 </form>
@@ -39,13 +39,19 @@
                             <label for="count">Кількість</label>
                             <input type="number" name="count" id="count" class="custom__count">
                         </div>
-                        <div>
-                            <input type="radio" name="choose_article" id="beer" value="beer"><label
-                                for="beer">Пиво</label>
-                            <input type="radio" name="choose_article" id="vine" value="vine"><label
-                                for="vine">Вино</label>
-                            <input type="radio" name="choose_article" id="pepsi" value="pepsi"><label
-                                for="pepsi">Пепсі</label>
+                        <div class="custom__choose-container">
+                            <div>
+                                <input type="radio" name="choose_article" id="beer" value="beer">
+                                <label for="beer">Пиво</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="choose_article" id="vine" value="vine">
+                                <label for="vine">Вино</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="choose_article" id="pepsi" value="pepsi">
+                                <label for="pepsi">Пепсі</label>
+                            </div>
                         </div>
                         <input type="button" value="Додати" class="custom__btn-add btn">
                     </form>
@@ -61,7 +67,7 @@
             </div>
             <div class="col">
                 <div class="check">
-                    <textarea name="" id="" class="check__value" disabled></textarea>
+                    
                 </div>
             </div>
         </div>
@@ -69,6 +75,7 @@
 
 
 
+    <script src="js/shop.js" type="module"></script>
     <script src="js/script.js" type="module"></script>
 </body>
 
