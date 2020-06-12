@@ -13,7 +13,7 @@
     <main class="wrapper">
         <div class="row">
             <div class="col stock">
-                <form action="" class="stock__container">
+                <form action="" class="stock__container" name="stock">
                     <div class="block">
                         <label>Баланс:</label>
                         <input type="text" class="stock__article" disabled name="bank">
@@ -24,7 +24,7 @@
                     </div>
                     <div class="block">
                         <label>Вино:</label>
-                        <input type="text" class="stock__article" disabled name="vine">
+                        <input type="text" class="stock__article" disabled name="wine">
                     </div>
                     <div class="block">
                         <label>Пепсі:</label>
@@ -34,7 +34,7 @@
             </div>
             <div class="col custom">
                 <div class="custom__order-block">
-                    <form class="custom__count-block">
+                    <form class="custom__count-block" name="custom">
                         <div class="block">
                             <label for="count">Кількість</label>
                             <input type="number" name="count" id="count" class="custom__count">
@@ -45,8 +45,8 @@
                                 <label for="beer">Пиво</label>
                             </div>
                             <div>
-                                <input type="radio" name="choose_article" id="vine" value="vine">
-                                <label for="vine">Вино</label>
+                                <input type="radio" name="choose_article" id="wine" value="wine">
+                                <label for="wine">Вино</label>
                             </div>
                             <div>
                                 <input type="radio" name="choose_article" id="pepsi" value="pepsi">
@@ -67,9 +67,14 @@
             </div>
             <div class="col">
                 <div class="check">
-                    
+
                 </div>
             </div>
+        </div>
+        <div class="window hide">
+            <img class="window__icon" src="img/close.svg">
+            <div class="window__warning"> </div>
+            <button class="window__btn btn">Close</button>
         </div>
     </main>
 

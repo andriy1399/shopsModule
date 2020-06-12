@@ -11,6 +11,7 @@
 body {
     color: rgb(17, 17, 17);
     font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 input[type='text'],
@@ -22,6 +23,7 @@ textarea {
     box-shadow: inset 0 0 2px 1px rgb(159, 153, 199);
     border-radius: 0.2em;
     width: 100%;
+    font-weight: 600;
 }
 
 
@@ -29,6 +31,7 @@ textarea {
 .wrapper {
     max-width: 75%;
     margin: 0 auto;
+    position: relative;
 }
 
 .row {
@@ -63,7 +66,6 @@ textarea {
 }
 
 
-.custom {}
 
 .custom__order-block div {
     margin-bottom: .8em;
@@ -79,7 +81,6 @@ textarea {
 }
 
 
-.custom__count-block {}
 
 input[type='number'] {
     background-color: #ffffff;
@@ -118,9 +119,6 @@ input[type='radio'] {
 .btn:hover{
     background-color: rgb(214, 204, 245);
 }
-.custom__payment-block {}
-
-.custom__pay-block {}
 
 .custom__order {
     height: 120px;
@@ -130,7 +128,51 @@ input[type='radio'] {
 .custom__btn-buy {
     margin-top: 0.5em;
 }
+.check{
+    line-height: 1.6;
+    text-align: center;
+}
 
-.check {}
 
-.check__value {}
+.window {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #ffffff;
+    box-shadow:  0 0 15px 3px rgba(0, 0, 0, 0.459);
+    border-radius: 0.3em;
+    padding: 1em;
+    width: 63%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    opacity: 1;
+    transition: opacity .5s ease;
+}
+.window__icon {
+    outline: 0;
+    border: 0;
+    background-color: none;
+    cursor: pointer;
+}
+.window__warning {
+    padding: 1.2em 1em;
+    width: 100%;
+    font-size: 1.1rem;
+    color: rgb(56, 56, 56);
+}
+.window__btn {
+    margin: 1em 0 0;
+    background-color: rgb(226, 223, 238);
+    box-shadow: 0 0 3px 1.5px rgb(123, 117, 165);
+}
+.window__btn:hover{
+    background-color: rgb(207, 200, 228);
+}
+
+.hide{
+    display: none;
+    opacity: 0;
+}
