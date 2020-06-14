@@ -26,17 +26,18 @@ pushInInput();
 getSel('.custom__btn-add').addEventListener('click', function () {
     let count = custom.count.value;
     let article = custom.choose_article.value;
-    if (count && article && count <= parseInt(stock[article].value)) {
-        base[article] = count;
-        getSel('.custom__order').value += `${translate[article]}: ${count} шт.\n`;
-    } else if (count >= parseInt(stock[article].value)) {
-        getSel('.window').classList.remove('hide');
-        getSel('.window__warning').textContent = `Вибачте, але на складі залишилось ${translate[article]}
-         тільки ${parseInt(stock[article].value)} штук`;
-
-    } else false
-    custom.reset()
-
+    if(article){
+        if (count && article && count <= parseInt(stock[article].value)) {
+            base[article] = count;
+            getSel('.custom__order').value += `${translate[article]}: ${count} шт.\n`;
+        } else if (count >= parseInt(stock[article].value)) {
+            getSel('.window').classList.remove('hide');
+            getSel('.window__warning').textContent = `Вибачте, але на складі залишилось ${translate[article]}
+             тільки ${parseInt(stock[article].value)} штук`;
+    
+        } else false
+        custom.reset()
+    }
 })
 
 getSel('.custom__btn-buy').addEventListener('click', function () {
