@@ -43,11 +43,10 @@ let find_double = function (string, item, lastCount, newCount) {
     return string;
 }
 
-
-let checkRegex = function(value){
-    if(value == 'Пиво') return /^(пиво)/i;
-    if(value == 'Пепсі') return /^(Пепсі)/i;
-    if(value == 'Вино') return /^(Вино)/i;
+let checkRegex = function (value) {
+    if (value == 'Пиво') return /^(пиво)/i;
+    if (value == 'Пепсі') return /^(Пепсі)/i;
+    if (value == 'Вино') return /^(Вино)/i;
 }
 
 export {
